@@ -1,0 +1,65 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<DemjanCsongor_orared>
+    <ora id="01_e" tipus="elmélet">
+        <targy>Web technológiák</targy>
+        <idopont nap="Hétfő" tol="08:00" ig="10:00"></idopont>
+        <helyszin>XXX A1 3.em 305</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="01_g" tipus="gyakorlat">
+        <targy>Web technológiák</targy>
+        <idopont nap="Hétfő" tol="16:00" ig="18:00"></idopont>
+        <helyszin>In/103 In 1.em 103</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="02_g" tipus="elmélet">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont nap="Kedd" tol="09:00" ig="12:00"></idopont>
+        <helyszin>II A2 mfsz.</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="02_e" tipus="gyakorlat">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont nap="Szerda" tol="09:00" ig="10:00"></idopont>
+        <helyszin>In/15 In. fsz 15</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="03_e" tipus="elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont nap="Kedd" tol="12:00" ig="14:00"></idopont>
+        <helyszin>XXXII A1 mfsz.</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+    <ora id="03_g" tipus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont nap="Szerda" tol="10:00" ig="12:00"></idopont>
+        <helyszin>In/101 In 1.em 101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="04_e" tipus="elmélet">
+        <targy>Algoritmusok és vizsgálatuk</targy>
+        <idopont nap="Kedd" tol="14:00" ig="18:00"></idopont>
+        <helyszin>X A1 2.em 218</helyszin>
+        <oktato>Dr. Házy Attila</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="05_e" tipus="elmélet">
+        <targy>Vállalati információs rendszerek fejlesztése</targy>
+        <idopont nap="Szerda" tol="16:00" ig="20:00"></idopont>
+        <helyszin>In/103 In 1.em 103</helyszin>
+        <oktato>Dr. Sásvári Péter</oktato>
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+</DemjanCsongor_orared>

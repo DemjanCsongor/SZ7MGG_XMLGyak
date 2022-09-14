@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<konferencia>
+    <cim>cím</cim>
+    <hallgatok>hallgatók</hallgatok>
+    <eloado>előadó</eloado>
+    <datum>datum</datum>
+
+</konferencia>
