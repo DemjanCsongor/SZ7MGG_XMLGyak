@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE DCS_modell SYSTEM "DCS_ertodtd.dtd">
+
+<DCS_modell>
+    <A Aa="a01">
+        <Ab>
+            <Abx></Abx>
+            <Aby></Aby>
+        </Ab>
+        <Ac>
+            <Acd></Acd>
+            <Ace></Ace>
+        </Ac>
+    </A>
+    <A_B>
+        <A_Bc></A_Bc>
+    </A_B>
+    <B Ba="a02">
+        <Bb>
+            <Bbx></Bbx>
+            <Bby></Bby>
+        </Bb>
+    </B>
+    <C Ca="a03">
+        <Cb></Cb>
+    </C>
+</DCS_modell>
