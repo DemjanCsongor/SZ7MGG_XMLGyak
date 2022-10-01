@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!ELEMENT DemjanCsongor_orared (ora)>
+
+<!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+        <!ATTLIST DCS_kurzusfelvetel
+                id ID #REQUIRED
+                tipus CDATA #REQUIRED
+
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont (#PCDATA)>
+        <!ATTLIST idopont
+                nap CDATA #REQUIRED
+                tol CDATA #REQUIRED
+                ig CDATA #REQUIRED
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
