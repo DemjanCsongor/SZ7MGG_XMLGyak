@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!ELEMENT DCS_kurzusfelvetel (hallgato, kurzusok)>
+
+        <!ATTLIST DCS_kurzusfelvetel
+        tanev CDATA #REQUIRED
+        egyetem CDATA #FIXED "ME"
+<!ELEMENT hallgato (hnev, szulev, szak*)>
+        <!ATTLIST hallgato
+                id ID #REQUIRED>
+
+<!ELEMENT hnev (#PCDATA)>
+<!ELEMENT szulev (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+        <!ATTLIST szak
+                evf CDATA #FIXED "5">
+
+<!ELEMENT kurzusok (kurzus*)>
+
+<!ELEMENT kurzus (kurzusnev+, kredit, hely, idopont+, oktato?, oraado?)>
+        <!ATTLIST kurzus
+                id ID #REQUIRED
+                nyelv CDATA
+                jovahagyas CDATA "nem">
+
+<!ELEMENT kurzusnev (#PCDATA)>
+<!ELEMENT kredit (#PCDATA)>
+<!ELEMENT hely (#PCDATA)>
+<!ELEMENT idopont (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT oraado (#PCDATA)>
+>
