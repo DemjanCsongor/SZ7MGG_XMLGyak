@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE DCS_adatbazis SYSTEM "DCS_adatbazis.dtd">
+
+<DCS_adatbazis>
+    <dolgozo kod="T_0001">
+        <nev>Demján Csongor</nev>
+        <fizetes>1.000.000</fizetes>
+    </dolgozo>
+</DCS_adatbazis>
