@@ -2,10 +2,10 @@
 
 <!ELEMENT DemjanCsongor_orared (ora)>
 
-<!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+<!ELEMENT ora (targy, idopont+, helyszin+, oktato+, szak)>
         <!ATTLIST DCS_kurzusfelvetel
                 id ID #REQUIRED
-                tipus CDATA #REQUIRED
+                tipus (elmélet|gyakorlat) #REQUIRED
 
 <!ELEMENT targy (#PCDATA)>
 <!ELEMENT idopont (#PCDATA)>
