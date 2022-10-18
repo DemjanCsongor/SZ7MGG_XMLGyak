@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="DCS_SMLSchema.xsd">
+
+    <!--Ettermek-->
+    <etterem ekod="e1">
+        <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegrádi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+    </etterem>
+    <etterem ekod="e2">
+        <nev>Zips</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Arany János</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </etterem>
+    <etterem ekod="e3">
+        <nev>Palotaszálló</nev>
+        <cim>
+            <varos>Lillafüred</varos>
+            <utca>Lilla</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </etterem>
+    <!--Foszakacs-->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Nagy Péter</nev>
+        <eletkor>40</eletkor>
+        <vegzettseg>Középiskola</vegzettseg>
+        <vegzettseg>Le Cordon Bleu</vegzettseg>
+    </foszakacs>
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Nagy Bence</nev>
+        <eletkor>20</eletkor>
+        <vegzettseg>Középiskola</vegzettseg>
+        <vegzettseg>Le Cordon Bleu+</vegzettseg>
+    </foszakacs>
+    <!--Szakacs-->
+    <szakacs szkod="sz1">
+        <nev>Kiss Lajos</nev>
+        <reszleg>Halak</reszleg>
+        <vegzettseg>Középiskola</vegzettseg>
+    </szakacs>
+    <szakacs szkod="sz2">
+        <nev>Ismet Lajos</nev>
+        <reszleg>Kecskék</reszleg>
+        <vegzettseg>Középiskola</vegzettseg>
+    </szakacs>
+    <!--Gyakornok-->
+    <gyakornok gykod="gy1">
+        <nev>Flora Trex</nev>
+        <gyakorlat>
+            <kezdete>2022.01.09</kezdete>
+            <idotartam>3 hónap</idotartam>
+        </gyakorlat>
+        <muszak>8:00 - 16:00</muszak>
+    </gyakornok>
+    <gyakornok gykod="gy2">
+        <nev>Flora Lott</nev>
+        <gyakorlat>
+            <kezdete>2022.01.09</kezdete>
+            <idotartam>3 hónap</idotartam>
+        </gyakorlat>
+        <muszak>8:00 - 16:00</muszak>
+    </gyakornok>
+    <!--Vendeg-->
+    <vendeg vkod="v1">
+        <nev>Pénzes Lajos</nev>
+        <eletkor>39</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Nem mondja</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v2">
+        <nev>Egy Ember</nev>
+        <eletkor>211</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Nem tudja</utca>
+            <hazszam>1</hazszam>
+        </cim>
+    </vendeg>
+    <!--Rendeles-->
+    <rendeles e_v_e="e1" e_v_v="v1">
+        <osszeg>9000</osszeg>
+        <etel>Steak</etel>
+    </rendeles>
+    <rendeles e_v_e="e2" e_v_v="v1">
+        <osszeg>9000</osszeg>
+        <etel>Steak</etel>
+    </rendeles>
+</vendeglatas>

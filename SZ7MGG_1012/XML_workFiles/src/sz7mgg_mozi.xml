@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<mozi>
+    <film id = "asd_film_05" mufaj = "horror">
+        <rendezo id = "rendez_film_05" nev = "Bence">
+        </rendezo>
+
+        <szinesz id = "szinesz_film_05" nev = "Wanna_wanna">
+        <gyerekszinesz id = "gyszinesz_1_film_05" nev = "Dojo_Boyo"/>
+        <musicalszinesz id = "mszinesz_1_film_05" nev = "Musical_Embor"/>
+        <szinkronszinesz id = "szszinesz_1_film_05" nev = "Szo_nelkul"/>
+        </szinesz>
+
+        <iro id = "iro_film_05"/>
+    </film>
+
+    <film>
+        <producer id="producer_1_film_05" nev = "Money_Man">
+        </producer>
+
+        <dramaturg id="dramaturg_1_film_05" nev = "Drama_Turg">
+        </dramaturg>
+
+        <operator id="operator_1_film_05" nev = "Oper_Ator">
+        </operator>
+    </film>
+</mozi>

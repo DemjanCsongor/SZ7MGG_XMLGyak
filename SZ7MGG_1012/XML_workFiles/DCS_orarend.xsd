@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Egyszerű típusok -->
+    <xs:simpleType name="targyTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"></xs:minLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+<xs:simpleType name="tolTipus">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="2"></xs:minLength>
+    </xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="igTipus">
+<xs:restriction base="xs:string">
+    <xs:minLength value="2"></xs:minLength>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="napTipus">
+<xs:restriction base="xs:string">
+    <xs:minLength value="2"></xs:minLength>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="helyszinTipus">
+<xs:restriction base="xs:string">
+    <xs:minLength value="2"></xs:minLength>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="oktatoTipus">
+<xs:restriction base="xs:string">
+    <xs:minLength value="2"></xs:minLength>
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="szakTipus">
+<xs:restriction base="xs:string">
+    <xs:minLength value="2"></xs:minLength>
+</xs:restriction>
+</xs:simpleType>
+
+        <!-- Séma -->
+
+<xs:element name="DemjanCsongor_orared">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="ora">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="targy" type="targyTipus" maxOccurs="unbounded"></xs:element>
+                    <xs:element name="idopont">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="tol" type="tolTipus" maxOccurs="unbounded"></xs:element>
+                                <xs:element name="ig" type="igTipus" maxOccurs="unbounded"></xs:element>
+                                <xs:element name="nap" type="napTipus" maxOccurs="unbounded"></xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="helyszin" type="helyszinTipus" maxOccurs="unbounded"></xs:element>
+                    <xs:element name="oktato" type="oktatoTipus" maxOccurs="unbounded"></xs:element>
+                    <xs:element name="szak" type="szakTipus" maxOccurs="unbounded"></xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>
