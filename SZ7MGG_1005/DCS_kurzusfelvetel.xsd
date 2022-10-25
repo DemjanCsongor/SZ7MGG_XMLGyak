@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:simpleType name="tanevTipus" >
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}/\d{4}I(I)?"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="egyetemTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="ME"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idTipus">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="5"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="igenNemTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="igen"/>
+            <xs:enumeration value="nem"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+<xs:element name="hallgato">
+<xs:complexType>
+    <xs:all>
+        <xs:element name="hnev" type="xs:string"></xs:element>
+        <xs:element name="szulev" type="xs:string"></xs:element>
+        <xs:element name="szak">
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:string"></xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+    </xs:all>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>
