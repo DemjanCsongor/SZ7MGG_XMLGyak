@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<!DOCTYPE DCS_kurzusfelvetel>
+
+<DCS_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+    <hallgato id="SZ7MGG.ME">
+        <hnev>Demján Csongor</hnev>
+        <szulev>2000-11-10</szulev>
+        <szak evf="5">Programtervező informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL322-B" jovahagyas="igen">
+            <kurzusnev>Adatbázis rendszerek I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In101</hely>
+            <idopont>Kedd 8:00-9:30</idopont>
+            <oktato>Dr. Kovács László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL333-B" nyelv="angol">
+            <kurzusnev>Webalkalmazás fejlesztés - Java</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In103</hely>
+            <idopont>Csütörtök 8:00-9:30</idopont>
+            <oktato>Dr. Barabás Péter</oktato>
+            <oraado>Tóth Bence</oraado>
+        </kurzus>
+    </kurzusok>
+
+</DCS_kurzusfelvetel>
