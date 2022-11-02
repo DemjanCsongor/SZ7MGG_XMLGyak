@@ -1,2 +1,2 @@
 # Adatkezelés XML-ben
-Órai anyagok feltöltésére.
+Órai anyagok és házi feladatok feltöltésére.
