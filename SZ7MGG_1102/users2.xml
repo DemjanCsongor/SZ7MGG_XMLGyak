@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMSZ7MGG">
+  <user id="1">
+    <firstname>Pál</firstname>
+    <lasatname>Kiss</lasatname>
+    <profession>Web Developer</profession>
+  </user>
+  <user id="2">
+    <firstname>Bence</firstname>
+    <lasatname>Kiss</lasatname>
+    <profession>Web Developer</profession>
+  </user>
+  <user id="3">
+    <firstname>Attila</firstname>
+    <lasatname>Kiss</lasatname>
+    <profession>Web Developer</profession>
+  </user>
+</users>
