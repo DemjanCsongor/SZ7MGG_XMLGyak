@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href="studentSZ7MGG.xsl"?>
+
+<class>
+    <student id = "01">
+        <vezeteknev>Demján</vezeteknev>
+        <keresztnev>Csongor</keresztnev>
+        <becenev>Csongi</becenev>
+        <kor>22</kor>
+        <osztondij>20000</osztondij>
+    </student>
+    <student id = "02">
+        <vezeteknev>Kiss</vezeteknev>
+        <keresztnev>Bence</keresztnev>
+        <becenev>Kábé</becenev>
+        <kor>24</kor>
+        <osztondij>999999</osztondij>
+    </student>
+    <student id = "31">
+        <vezeteknev>Nagy</vezeteknev>
+        <keresztnev>István</keresztnev>
+        <becenev>Isti</becenev>
+        <kor>29</kor>
+        <osztondij>300000</osztondij>
+    </student>
+</class>
