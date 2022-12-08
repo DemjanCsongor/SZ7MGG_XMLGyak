@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+
+    <xs:attribute name="Sz_V_Id" type="xs:string" />
+
+    <xs:complexType name="boltomTipus">
+        <xs:sequence>
+            <xs:element name="tulajdonos" type="tulajdonosTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="marka" type="markaTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="ruha" type="ruhaTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="vasarlas" type="vasarlasTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="vasarlo" type="vasarloTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="szamla" type="szamlaTipus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tulajdonosTipus">
+        <xs:sequence>
+            <xs:element name="tulajdonosId" type="xs:string"/>
+            <xs:element name="nev" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="profit" type="xs:integer"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="markaTipus">
+        <xs:sequence>
+            <xs:element name="markaId" type="xs:integer"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ruhaTipus">
+        <xs:sequence>
+            <xs:element name="ruhaId" type="xs:integer"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="ar" type="xs:integer"/>
+            <xs:element name="kategoria" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="elkeszitesidatum" type="xs:date"/>
+            <xs:element name="ajandek" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vasarlasTipus">
+        <xs:sequence>
+            <xs:element name="ruhaFk" type="xs:integer"/>
+            <xs:element name="darabszam" type="xs:integer"/>
+            <xs:element name="fizetesimod" type="xs:string"/>
+            <xs:element name="vasarloFK" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vasarloTipus">
+        <xs:sequence>
+            <xs:element name="vasarloId" type="xs:integer"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="cimTipus">
+        <xs:sequence>
+            <xs:element name="irsz" type="xs:integer"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="szamlaTipus">
+        <xs:sequence>
+            <xs:element name="szamlaId" type="xs:integer"/>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="osszeg" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute ref="Sz_V_Id" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="boltom" type="boltomTipus">
+        <!-- Kulcsok -->
+        <xs:key name = "tulajdonosPK">
+            <xs:selector xpath="tulajdonos"/>
+            <xs:field xpath="tulajdonosId"/>
+        </xs:key>
+
+        <xs:key name = "markaPK">
+            <xs:selector xpath="marka"/>
+            <xs:field xpath="markaId"/>
+        </xs:key>
+
+        <xs:key name = "ruhaPK">
+            <xs:selector xpath="ruha"/>
+            <xs:field xpath="ruhaId"/>
+        </xs:key>
+
+        <xs:key name = "vasarloPK">
+            <xs:selector xpath="vasarlo"/>
+            <xs:field xpath="vasarloId"/>
+        </xs:key>
+
+        <xs:key name = "szamlaPK">
+            <xs:selector xpath="szamla"/>
+            <xs:field xpath="szamlaId"/>
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+        <xs:keyref refer="tulajdonosPK" name = "markatulajdonosFK">
+            <xs:selector xpath="marka"/>
+            <xs:field xpath="tulajdonosFk"/>
+        </xs:keyref>
+
+        <xs:keyref refer="ruhaPK" name = "ruhamarkaFK">
+            <xs:selector xpath="marka"/>
+            <xs:field xpath="ruhaFk"/>
+        </xs:keyref>
+
+        <xs:keyref refer="ruhaPK" name = "ruhavasarlasFK">
+            <xs:selector xpath="vasarlas"/>
+            <xs:field xpath="ruhaFk"/>
+        </xs:keyref>
+
+        <xs:keyref refer="vasarloPK" name = "vasarlovasarlasFK">
+            <xs:selector xpath="vasarlas"/>
+            <xs:field xpath="vasarloFk"/>
+        </xs:keyref>
+
+        <!-- 1:1 kapcsolat -->
+        <xs:unique name ="unique_Szamla">
+            <xs:selector xpath="szamla"/>
+            <xs:field xpath="Sz_V_Id"/>
+        </xs:unique>
+
+    </xs:element>
+
+</xs:schema>
